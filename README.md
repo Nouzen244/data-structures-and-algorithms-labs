@@ -4,7 +4,7 @@
 Задания и методики — в курсовом репозитории
 [mel0d1an/data-structures-and-algorithms](https://github.com/mel0d1an/data-structures-and-algorithms).
 
-**Вариант 17 → seed генератора данных = 30 + 17 = 47.**
+**Вариант 17 -> seed генератора данных = 30 + 17 = 47.**
 
 ## Состав
 
