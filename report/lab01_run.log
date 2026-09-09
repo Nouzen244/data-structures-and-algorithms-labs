@@ -1,0 +1,39 @@
+Данные варианта 17 (seed=47) из C:\Users\Legend\Desktop\University\СИАОД\data\generated
+self_check: OK
+
+array_sum:
+  n=   1000  t=0.000028 c
+  n=   3000  t=0.000084 c
+  n=  10000  t=0.000281 c
+  n=  30000  t=0.000853 c
+  n= 100000  t=0.002873 c
+
+array_max:
+  n=   1000  t=0.000030 c
+  n=   3000  t=0.000092 c
+  n=  10000  t=0.000308 c
+  n=  30000  t=0.000926 c
+  n= 100000  t=0.003144 c
+
+count_equal_pairs:
+  n=    500  t=0.004293 c
+  n=   1000  t=0.017954 c
+  n=   3000  t=0.156614 c
+  n=  10000  t=1.824748 c
+  n=  30000  t=18.753793 c
+
+binary_pow (по 20000 вызовов на точку, по модулю 1000000007):
+  n=     1000  log2(n)= 10.0  t=0.000002277 c
+  n=    10000  log2(n)= 13.3  t=0.000002794 c
+  n=   100000  log2(n)= 16.6  t=0.000003555 c
+  n=  1000000  log2(n)= 19.9  t=0.000004029 c
+  n= 10000000  log2(n)= 23.3  t=0.000005082 c
+
+Наклон в осях log-log (оценка показателя степени):
+  array_sum            1.003
+  array_max            1.008
+  count_equal_pairs    2.039
+
+Графики сохранены:
+  report\lab01_loglog.png
+  report\lab01_binary_pow.png
