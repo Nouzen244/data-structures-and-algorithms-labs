@@ -1,0 +1,10 @@
+# Сгенерированные данные варианта не коммитятся (см. docs/reproducibility.md
+# курсового репозитория): они детерминированно воспроизводятся по номеру варианта.
+data/generated/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
