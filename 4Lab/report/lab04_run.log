@@ -1,0 +1,254 @@
+self_check:
+  merge_sort: OK
+  counting_sort: OK
+  radix_sort_lsd: OK
+  heap_sort: OK
+  quick_sort: OK
+  стабильность merge_sort: OK
+  свойство кучи и сортировка на месте: OK
+  устойчивость прохода radix: OK
+  radix без устойчивости неверен: OK
+  диапазон ключей counting/radix: OK
+  стабильность: merge да, heap и quick нет: OK
+  вход не изменяется: OK
+self_check: OK
+
+n = 1000:
+  распределение random_wide:
+            merge_sort: t = 0.001783 c
+         counting_sort: пропуск (диапазон ключей)
+        radix_sort_lsd: t = 0.001237 c
+             heap_sort: t = 0.001760 c
+     quick_sort (ЛР 3): t = 0.001988 c
+     sorted() (эталон): t = 0.000058 c
+  распределение random_small:
+            merge_sort: t = 0.001667 c
+         counting_sort: t = 0.000112 c
+        radix_sort_lsd: t = 0.000616 c
+             heap_sort: t = 0.001736 c
+     quick_sort (ЛР 3): t = 0.000860 c
+     sorted() (эталон): t = 0.000049 c
+  распределение sorted:
+            merge_sort: t = 0.001141 c
+         counting_sort: t = 0.000160 c
+        radix_sort_lsd: t = 0.000422 c
+             heap_sort: t = 0.001901 c
+     quick_sort (ЛР 3): t = 0.001932 c
+     sorted() (эталон): t = 0.000007 c
+  распределение reversed:
+            merge_sort: t = 0.001176 c
+         counting_sort: t = 0.000173 c
+        radix_sort_lsd: t = 0.000509 c
+             heap_sort: t = 0.001597 c
+     quick_sort (ЛР 3): t = 0.001902 c
+     sorted() (эталон): t = 0.000005 c
+  распределение almost_sorted:
+            merge_sort: t = 0.001405 c
+         counting_sort: t = 0.000166 c
+        radix_sort_lsd: t = 0.000377 c
+             heap_sort: t = 0.001953 c
+     quick_sort (ЛР 3): t = 0.002283 c
+     sorted() (эталон): t = 0.000012 c
+
+n = 3000:
+  распределение random_wide:
+            merge_sort: t = 0.006186 c
+         counting_sort: пропуск (диапазон ключей)
+        radix_sort_lsd: t = 0.003743 c
+             heap_sort: t = 0.006814 c
+     quick_sort (ЛР 3): t = 0.007064 c
+     sorted() (эталон): t = 0.000312 c
+  распределение random_small:
+            merge_sort: t = 0.005847 c
+         counting_sort: t = 0.000407 c
+        radix_sort_lsd: t = 0.001239 c
+             heap_sort: t = 0.007646 c
+     quick_sort (ЛР 3): t = 0.002771 c
+     sorted() (эталон): t = 0.000259 c
+  распределение sorted:
+            merge_sort: t = 0.004357 c
+         counting_sort: t = 0.000608 c
+        radix_sort_lsd: t = 0.001588 c
+             heap_sort: t = 0.006691 c
+     quick_sort (ЛР 3): t = 0.006501 c
+     sorted() (эталон): t = 0.000019 c
+  распределение reversed:
+            merge_sort: t = 0.003912 c
+         counting_sort: t = 0.000502 c
+        radix_sort_lsd: t = 0.001518 c
+             heap_sort: t = 0.005945 c
+     quick_sort (ЛР 3): t = 0.007728 c
+     sorted() (эталон): t = 0.000021 c
+  распределение almost_sorted:
+            merge_sort: t = 0.008375 c
+         counting_sort: t = 0.000821 c
+        radix_sort_lsd: t = 0.001563 c
+             heap_sort: t = 0.006894 c
+     quick_sort (ЛР 3): t = 0.007094 c
+     sorted() (эталон): t = 0.000029 c
+
+n = 10000:
+  распределение random_wide:
+            merge_sort: t = 0.022622 c
+         counting_sort: пропуск (диапазон ключей)
+        radix_sort_lsd: t = 0.012685 c
+             heap_sort: t = 0.026428 c
+     quick_sort (ЛР 3): t = 0.026626 c
+     sorted() (эталон): t = 0.001244 c
+  распределение random_small:
+            merge_sort: t = 0.021275 c
+         counting_sort: t = 0.001085 c
+        radix_sort_lsd: t = 0.004015 c
+             heap_sort: t = 0.024546 c
+     quick_sort (ЛР 3): t = 0.008221 c
+     sorted() (эталон): t = 0.000953 c
+  распределение sorted:
+            merge_sort: t = 0.014584 c
+         counting_sort: t = 0.001754 c
+        radix_sort_lsd: t = 0.005822 c
+             heap_sort: t = 0.026325 c
+     quick_sort (ЛР 3): t = 0.024456 c
+     sorted() (эталон): t = 0.000043 c
+  распределение reversed:
+            merge_sort: t = 0.014597 c
+         counting_sort: t = 0.001768 c
+        radix_sort_lsd: t = 0.006778 c
+             heap_sort: t = 0.025142 c
+     quick_sort (ЛР 3): t = 0.035083 c
+     sorted() (эталон): t = 0.000073 c
+  распределение almost_sorted:
+            merge_sort: t = 0.028995 c
+         counting_sort: t = 0.002357 c
+        radix_sort_lsd: t = 0.005643 c
+             heap_sort: t = 0.026476 c
+     quick_sort (ЛР 3): t = 0.030363 c
+     sorted() (эталон): t = 0.000184 c
+
+n = 30000:
+  распределение random_wide:
+            merge_sort: t = 0.077483 c
+         counting_sort: пропуск (диапазон ключей)
+        radix_sort_lsd: t = 0.051402 c
+             heap_sort: t = 0.107452 c
+     quick_sort (ЛР 3): t = 0.117728 c
+     sorted() (эталон): t = 0.005923 c
+  распределение random_small:
+            merge_sort: t = 0.080850 c
+         counting_sort: t = 0.003309 c
+        radix_sort_lsd: t = 0.012037 c
+             heap_sort: t = 0.088334 c
+     quick_sort (ЛР 3): t = 0.023565 c
+     sorted() (эталон): t = 0.002967 c
+  распределение sorted:
+            merge_sort: t = 0.047255 c
+         counting_sort: t = 0.005208 c
+        radix_sort_lsd: t = 0.021847 c
+             heap_sort: t = 0.124850 c
+     quick_sort (ЛР 3): t = 0.092891 c
+     sorted() (эталон): t = 0.000129 c
+  распределение reversed:
+            merge_sort: t = 0.048163 c
+         counting_sort: t = 0.005282 c
+        radix_sort_lsd: t = 0.021582 c
+             heap_sort: t = 0.081480 c
+     quick_sort (ЛР 3): t = 0.096622 c
+     sorted() (эталон): t = 0.000150 c
+  распределение almost_sorted:
+            merge_sort: t = 0.064769 c
+         counting_sort: t = 0.005503 c
+        radix_sort_lsd: t = 0.021518 c
+             heap_sort: t = 0.103122 c
+     quick_sort (ЛР 3): t = 0.090256 c
+     sorted() (эталон): t = 0.000535 c
+
+n = 100000:
+  распределение random_wide:
+            merge_sort: t = 0.345301 c
+         counting_sort: пропуск (диапазон ключей)
+        radix_sort_lsd: t = 0.151346 c
+             heap_sort: t = 0.387858 c
+     quick_sort (ЛР 3): t = 0.349580 c
+     sorted() (эталон): t = 0.018083 c
+  распределение random_small:
+            merge_sort: t = 0.263024 c
+         counting_sort: t = 0.011238 c
+        radix_sort_lsd: t = 0.039629 c
+             heap_sort: t = 0.306808 c
+     quick_sort (ЛР 3): t = 0.093177 c
+     sorted() (эталон): t = 0.010002 c
+  распределение sorted:
+            merge_sort: t = 0.181694 c
+         counting_sort: t = 0.017409 c
+        radix_sort_lsd: t = 0.071936 c
+             heap_sort: t = 0.389419 c
+     quick_sort (ЛР 3): t = 0.301855 c
+     sorted() (эталон): t = 0.000601 c
+  распределение reversed:
+            merge_sort: t = 0.182436 c
+         counting_sort: t = 0.017117 c
+        radix_sort_lsd: t = 0.085894 c
+             heap_sort: t = 0.339633 c
+     quick_sort (ЛР 3): t = 0.329601 c
+     sorted() (эталон): t = 0.000610 c
+  распределение almost_sorted:
+            merge_sort: t = 0.239033 c
+         counting_sort: t = 0.023464 c
+        radix_sort_lsd: t = 0.096853 c
+             heap_sort: t = 0.407039 c
+     quick_sort (ЛР 3): t = 0.328313 c
+     sorted() (эталон): t = 0.002949 c
+
+Наклоны log-log (1 — линейное время, ~1.1 — n log n):
+  random_wide:
+            merge_sort: 1.13
+        radix_sort_lsd: 1.06
+             heap_sort: 1.18
+     quick_sort (ЛР 3): 1.14
+     sorted() (эталон): 1.25
+  random_small:
+            merge_sort: 1.11
+         counting_sort: 0.98
+        radix_sort_lsd: 0.92
+             heap_sort: 1.11
+     quick_sort (ЛР 3): 1.00
+     sorted() (эталон): 1.14
+  sorted:
+            merge_sort: 1.09
+         counting_sort: 1.00
+        radix_sort_lsd: 1.12
+             heap_sort: 1.18
+     quick_sort (ЛР 3): 1.11
+     sorted() (эталон): 0.95
+  reversed:
+            merge_sort: 1.09
+         counting_sort: 1.00
+        radix_sort_lsd: 1.12
+             heap_sort: 1.16
+     quick_sort (ЛР 3): 1.11
+     sorted() (эталон): 1.02
+  almost_sorted:
+            merge_sort: 1.07
+         counting_sort: 1.03
+        radix_sort_lsd: 1.19
+             heap_sort: 1.16
+     quick_sort (ЛР 3): 1.08
+     sorted() (эталон): 1.21
+
+CountingSort: n = 10000, растёт диапазон ключей k = key_max + 1
+  key_max =       100: counting t = 0.000973 c, sorted() t = 0.000947 c, счётчиков 101
+  key_max =      1000: counting t = 0.001246 c, sorted() t = 0.001234 c, счётчиков 1001
+  key_max =     10000: counting t = 0.001798 c, sorted() t = 0.001245 c, счётчиков 10001
+  key_max =    100000: counting t = 0.007478 c, sorted() t = 0.001277 c, счётчиков 100001
+  key_max =   1000000: counting t = 0.080305 c, sorted() t = 0.001769 c, счётчиков 1000001
+  key_max =  10000000: counting t = 1.029733 c, sorted() t = 0.001445 c, счётчиков 10000001
+
+Сводная таблица свойств (время и память — порядок роста, Θ):
+  merge_sort | n log n | n log n | n log n | n | да | нет; нужна память под копии
+  counting_sort | n + k | n + k | n + k | n + k | да | целые ключи из [0, key_max]; при k >> n теряет смысл
+  radix_sort_lsd | d(n + 10) | d(n + 10) | d(n + 10) | n + 10 | да | неотрицательные целые; d — число разрядов
+  heap_sort | n log n | n log n | n log n | 1 | нет | нет; на месте
+  quick_sort (ЛР 3) | n log n | n log n | n² | log n | нет | худший случай маловероятен из-за рандомизации
+  sorted() (эталон) | n | n log n | n log n | n | да | Timsort; любые сравнимые ключи
+
+График сохранён:
+  report/lab04_loglog.png
